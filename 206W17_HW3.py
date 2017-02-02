@@ -20,8 +20,8 @@ import re
 ## Write code to define your parse_counted_words function here.
 
 def parse_counted_words(string):
-    m = re.findall("([0-9]+) ([^A-z]?[A-z]+)", string)
-    if m:
+    y = re.findall("([0-9]+) ([^A-z]?[A-z]+)", string)
+    if y:
         return m[-1]
     else:
         return None
@@ -48,22 +48,22 @@ microsoft_files_num= 0
 for path in f:
     path = path.rstrip('\n')
 
-    ## part (a)
+    ## part a
     File = re.findall("\..+$", path)
     if File:
         file_paths_num += 1
 
-    ## part (b)
+    ## part b
     FullPath = re.findall("^[~/]", path)
     if FullPath:
         full_paths_num += 1
 
-    ## part (c)
+    ## part c
     PythonCourse = re.findall("SI206/.+\.py$", path)
     if PythonCourse:
         python_course_paths += 1
 
-    ## part (d)
+    ## part d
     MicrosoftFile = re.findall("[0-9]\.xlsx|\.docx$", path)
     if MicrosoftFile:
         microsoft_files_num += 1
