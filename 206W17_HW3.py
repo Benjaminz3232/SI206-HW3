@@ -4,10 +4,9 @@ import re
 ## SI 206 - W17 - HW3
 ## COMMENT WITH:
 ## Your section day/time: Thursday 6pm
-## Any names of people you worked with on this assignment: n/a
+## Any names of people you worked with on this assignment: none
 
 #####################
-
 
 ## PART 1: 300 points
 
